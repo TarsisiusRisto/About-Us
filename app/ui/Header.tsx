@@ -3,14 +3,13 @@ import React from "react";
 
 const Header = () => {
   return (
-    <>
-      <div className="text-center lg:mt-10">
-        <p className="text-3xl lg:mt-10 mt-5">Enjoy ur time 💕</p>
+    <section className="h-screen">
+      <div className="text-center pt-24">
+        <p className="text-3xl lg:mt-10">Enjoy ur time 💕</p>
       </div>
-
       <div id="home" className="flex  flex-wrap">
         <div className="w-full lg:w-1/2 self-center px-4">
-          <div className="relative mt-16 lg:right-0">
+          <div className="relative mt-12 lg:right-0">
             <Image
               src="/assets/Risto/risto.jpg"
               alt="risto"
@@ -65,7 +64,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

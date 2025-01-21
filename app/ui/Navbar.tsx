@@ -8,27 +8,35 @@ const Navbar = () => {
     setisClick(!isClick);
   };
   return (
-    <>
-      <nav className="max-w-full px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between relative">
+    <div className="fixed top-0 left-0 w-full z-50">
+      <nav className="max-w-full px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between relative bg-slate-200">
         <Image
           src="/assets/logo.png"
           alt="logo"
-          width={60}
-          height={60}
-          className="mr-14 cursor-pointer"
+          width={35}
+          height={35}
+          className="cursor-pointer"
         />
-        <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+        <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 ">
           <li>
-            <a href="">Home</a>
+            <a href="" className="hover:underline">
+              Home
+            </a>
           </li>
           <li>
-            <a href="">About Us</a>
+            <a href="" className="hover:underline">
+              About Us
+            </a>
           </li>
           <li>
-            <a href="">Gallery</a>
+            <a href="" className="hover:underline">
+              Gallery
+            </a>
           </li>
           <li>
-            <a href="">Contact</a>
+            <a href="" className="hover:underline">
+              Contact
+            </a>
           </li>
         </ul>
 
@@ -89,7 +97,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 

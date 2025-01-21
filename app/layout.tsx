@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${poppins.className} ${libreBaskerville.className} antialiased leading-8 overflow-hidden`}
+        className={`${poppins.className} ${libreBaskerville.className} antialiased leading-8`}
       >
         {children}
       </body>

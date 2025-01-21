@@ -11,6 +11,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        timerbg: "#516091",
+        boxTimer: "#adebbe",
+        numberTimer: "#ffff8f",
       },
     },
   },

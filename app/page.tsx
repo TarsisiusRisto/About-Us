@@ -1,13 +1,15 @@
 "use client";
-import CountingTimer from "./ui/CountingTimer";
+import Count from "./ui/Count";
 import Header from "./ui/Header";
 import Navbar from "./ui/Navbar";
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-y-auto scroll-smooth">
       <Navbar />
-      <Header/>
-      <CountingTimer/>
+      <main>
+        <Header  />
+        <Count />
+      </main>
     </div>
   );
 }

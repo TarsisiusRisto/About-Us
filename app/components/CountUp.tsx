@@ -2,15 +2,15 @@ import React from "react";
 import { Itim } from "next/font/google";
 import Image from "next/image";
 import img from "../../public/assets/coupleHands.svg";
-import CountUpTimer from "../components/CountUpTimer";
+import CountUpTimer from "./ui/Timer/CountUpTimer";
 const itim = Itim({ weight: ["400"], subsets: ["latin"] });
 const CountUp = () => {
   return (
-    <section
+    <div
       id="about"
-      className="h-screen px-14 pt-10 pb-32 w-full flex flex-col lg:flex-row justify-between items-center"
+      className="h-screen px-4 w-full flex flex-col lg:flex-row justify-between items-center"
     >
-      <div className="w-full lg:w-1/2 text-center lg:text-start items-center">
+      <div className="w-full lg:w-1/2 text-center lg:text-start px-5 items-center">
         <h1 className="text-6xl lg:text-7xl xl:text-8xl mb-5 text-black">
           <small className="text-3xl font-semibold">Test</small>
           <br />
@@ -29,14 +29,14 @@ const CountUp = () => {
         </h3>
         <CountUpTimer launcDate="2024-03-14 00:00:00" />
       </div>
-      <div className="w-full lg:w-1/2 flex justify-center mt-14 lg:mt-10 lg:pl-4">
+      <div className="w-full lg:w-1/2 flex justify-center lg:mt-10 lg:pl-4">
         <Image
           src={img}
           alt="imageTimer"
           className="w-full max-w-[500px] h-auto"
         />
       </div>
-    </section>
+    </div>
   );
 };
 

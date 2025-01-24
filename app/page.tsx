@@ -1,17 +1,23 @@
 "use client";
-import CountUp from "./ui/CountUp";
-import Gallery from "./ui/Gallery";
-import Header from "./ui/Header";
-import Navbar from "./ui/Navbar";
+import CountUp from "./components/CountUp";
+import Gallery from "./components/Gallery";
+import Header from "./components/Header";
+import Navbar from "./components/navigation/Navbar";
 export default function Home() {
   return (
     <div className="overflow-y-auto scroll-smooth">
-      <Navbar />
-      <main>
+      <div>
+        <Navbar />
+      </div>
+      <div className="">
         <Header />
+      </div>
+      <div className="">
         <CountUp />
+      </div>
+      <div>
         <Gallery />
-      </main>
+      </div>
     </div>
   );
 }

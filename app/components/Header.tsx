@@ -2,15 +2,15 @@ import Image from "next/image";
 import React from "react";
 const Header = () => {
   return (
-    <section id="home" className="h-screen">
-      <div className="text-center pt-32">
+    <section id="home" className="w-full">
+      <div className="text-center mt-20 lg:mt-36">
         <a className="text-2xl font-semibold text-black py-3 px-8 bg-white rounded-full hover:shadow-colorText hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
           Enjoy ur time 💕
         </a>
       </div>
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2 self-center px-4">
-          <div className="relative mt-36 lg:right-0">
+          <div className="relative mt-12 lg:right-0">
             <Image
               src="/assets/Risto/risto.jpg"
               alt="risto"
@@ -35,13 +35,13 @@ const Header = () => {
           <div className="">
             <h1 className="text-center lg:text-2xl mt-14 text-base">
               Halo saya,
-              <span className="font-bold block text-xl mt-1 lg:text-2xl">
+              <span className="font-bold block text-xl lg:text-2xl">
                 Tarsisius Risto Ardianto
               </span>
             </h1>
-            <h2 className="font-semibold text-center text-lg mt-3 lg:text-xl">
+            <h2 className="font-semibold text-center text-lg lg:text-xl">
               Mahasiswa
-              <span className="block font-semibold text-l mt-5 lg:text-xl mb-10 leading-relaxed">
+              <span className="block font-semibold text-l lg:text-xl mb-10 leading-relaxed">
                 Hobi bikin nisa nangis
               </span>
             </h2>
@@ -74,13 +74,13 @@ const Header = () => {
           <div className="">
             <h1 className="text-center lg:text-2xl mt-14 text-base">
               Halo saya,
-              <span className="font-bold block text-xl mt-1 lg:text-2xl">
+              <span className="font-bold block text-xl lg:text-2xl">
                 Anisa Iktibar Maharani
               </span>
             </h1>
-            <h2 className="font-bold text-center text-lg mt-3 lg:text-xl">
+            <h2 className="font-bold text-center text-lg lg:text-xl">
               Mahasiswa
-              <span className="block font-semibold text-l mt-5 lg:text-xl mb-10 leading-relaxed">
+              <span className="block font-semibold text-l lg:text-xl mb-10 leading-relaxed">
                 Hobi nangis
               </span>
             </h2>

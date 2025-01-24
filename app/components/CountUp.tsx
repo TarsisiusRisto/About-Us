@@ -10,7 +10,7 @@ const CountUp = () => {
       id="about"
       className="h-screen px-4 w-full flex flex-col lg:flex-row justify-between items-center"
     >
-      <div className="w-full lg:w-1/2 text-center lg:text-start px-5 items-center">
+      <div className="w-full lg:w-1/2 text-center lg:text-start px-5 lg:pl-24 items-center">
         <h1 className="text-6xl lg:text-7xl xl:text-8xl mb-5 text-black">
           <small className="text-3xl font-semibold">Test</small>
           <br />

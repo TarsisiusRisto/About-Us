@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import ristoBlob from "../../public/assets/ristoBlob.svg";
+import anisaBlob from "../../public/assets/anisaBlob.svg";
 const Header = () => {
   return (
     <section id="home" className="w-full">
@@ -18,22 +20,9 @@ const Header = () => {
               height={180}
               className="rounded-full relative max-w-full mx-auto z-10"
             />
-            <span className="absolute -bottom-10 left-1/2 -translate-x-1/2 md:scale-120">
-              <svg
-                viewBox="0 0 200 150"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-[300] h-[300]"
-              >
-                <path
-                  fill="#9EF0F0"
-                  d="M35.8,-39C46.6,-25,55.8,-12.5,59.1,3.3C62.5,19.2,60,38.3,49.2,47.3C38.3,56.2,19.2,54.9,1.8,53.1C-15.6,51.3,-31.2,49,-46.4,40.1C-61.6,31.2,-76.3,15.6,-75.5,0.8C-74.7,-13.9,-58.3,-27.9,-43.1,-41.9C-27.9,-56,-13.9,-70.1,-0.7,-69.4C12.5,-68.7,25,-53.1,35.8,-39Z"
-                  transform="translate(100 100) scale(1.1)"
-                />
-              </svg>
-            </span>
           </div>
           <div className="">
-            <h1 className="text-center lg:text-2xl mt-14 text-base">
+            <h1 className="text-center lg:text-2xl mt-10 text-base">
               Halo saya,
               <span className="font-bold block text-xl lg:text-2xl">
                 Tarsisius Risto Ardianto
@@ -57,22 +46,9 @@ const Header = () => {
               height={180}
               className="rounded-full relative max-w-full z-10 mx-auto"
             />
-            <span className="absolute -bottom-10 left-1/2 -translate-x-1/2 md:scale-120">
-              <svg
-                viewBox="0 0 200 150"
-                xmlns="http://www.w3.org/2000/svg"
-                className="w-[300] h-[300]"
-              >
-                <path
-                  fill="#FF0066"
-                  d="M35.8,-39C46.6,-25,55.8,-12.5,59.1,3.3C62.5,19.2,60,38.3,49.2,47.3C38.3,56.2,19.2,54.9,1.8,53.1C-15.6,51.3,-31.2,49,-46.4,40.1C-61.6,31.2,-76.3,15.6,-75.5,0.8C-74.7,-13.9,-58.3,-27.9,-43.1,-41.9C-27.9,-56,-13.9,-70.1,-0.7,-69.4C12.5,-68.7,25,-53.1,35.8,-39Z"
-                  transform="translate(100 100) scale(1.1)"
-                />
-              </svg>
-            </span>
           </div>
           <div className="">
-            <h1 className="text-center lg:text-2xl mt-14 text-base">
+            <h1 className="text-center lg:text-2xl mt-10 text-base">
               Halo saya,
               <span className="font-bold block text-xl lg:text-2xl">
                 Anisa Iktibar Maharani

@@ -9,7 +9,7 @@ const Navbar = () => {
   };
   return (
     <div className="fixed top-0 left-0 w-full z-50">
-      <nav className="max-w-full px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between relative bg-slate-200">
+      <nav className="max-w-full px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between relative">
         <Image
           src="/assets/logo.png"
           alt="logo"
@@ -18,23 +18,35 @@ const Navbar = () => {
           className="cursor-pointer"
         />
         <ul className="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 ">
-          <li>
-            <a href="" className="hover:underline">
+          <li className="group">
+            <a
+              href="#home"
+              className="group-hover:text-colorText font-Poppins font-semibold"
+            >
               Home
             </a>
           </li>
-          <li>
-            <a href="" className="hover:underline">
+          <li className="group">
+            <a
+              href="#about"
+              className="group-hover:text-colorText font-Poppins font-semibold"
+            >
               About Us
             </a>
           </li>
-          <li>
-            <a href="" className="hover:underline">
+          <li className="group">
+            <a
+              href="#gallery"
+              className="group-hover:text-colorText font-Poppins font-semibold"
+            >
               Gallery
             </a>
           </li>
-          <li>
-            <a href="" className="hover:underline">
+          <li className="group">
+            <a
+              href="#contact"
+              className="group-hover:text-colorText font-Poppins font-semibold"
+            >
               Contact
             </a>
           </li>

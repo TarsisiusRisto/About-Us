@@ -1,3 +1,8 @@
+import {
+  Libre_Barcode_EAN13_Text,
+  Libre_Baskerville,
+  Poppins,
+} from "next/font/google";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -11,9 +16,14 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        timerbg: "#516091",
-        boxTimer: "#adebbe",
+        timerbg: "#aec3ff",
+        boxTimer: "#223862",
         numberTimer: "#ffff8f",
+        colorText: "#98D8EF",
+      },
+      fontFamily: {
+        Libre_Baskerville: ["Libre_Baskerville", "sans-serif"],
+        Poppins: ["Poppins", "seif"],
       },
     },
   },

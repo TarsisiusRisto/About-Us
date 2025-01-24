@@ -1,15 +1,16 @@
 import Image from "next/image";
 import React from "react";
-
 const Header = () => {
   return (
-    <section className="h-screen">
-      <div className="text-center pt-24">
-        <p className="text-3xl lg:mt-10">Enjoy ur time 💕</p>
+    <section id="home" className="h-screen">
+      <div className="text-center pt-32">
+        <a className="text-2xl font-semibold text-black py-3 px-8 bg-white rounded-full hover:shadow-colorText hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">
+          Enjoy ur time 💕
+        </a>
       </div>
-      <div id="home" className="flex  flex-wrap">
+      <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2 self-center px-4">
-          <div className="relative mt-12 lg:right-0">
+          <div className="relative mt-36 lg:right-0">
             <Image
               src="/assets/Risto/risto.jpg"
               alt="risto"
@@ -19,7 +20,7 @@ const Header = () => {
             />
             <span className="absolute -bottom-10 left-1/2 -translate-x-1/2 md:scale-120">
               <svg
-                viewBox="0 0 200 220"
+                viewBox="0 0 200 150"
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-[300] h-[300]"
               >
@@ -30,9 +31,20 @@ const Header = () => {
                 />
               </svg>
             </span>
-            <h1 className="text-center lg:text-2xl mt-5 font-semibold">
-              Tarsisius Risto Ardianto
+          </div>
+          <div className="">
+            <h1 className="text-center lg:text-2xl mt-14 text-base">
+              Halo saya,
+              <span className="font-bold block text-xl mt-1 lg:text-2xl">
+                Tarsisius Risto Ardianto
+              </span>
             </h1>
+            <h2 className="font-semibold text-center text-lg mt-3 lg:text-xl">
+              Mahasiswa
+              <span className="block font-semibold text-l mt-5 lg:text-xl mb-10 leading-relaxed">
+                Hobi bikin nisa nangis
+              </span>
+            </h2>
           </div>
         </div>
 
@@ -47,7 +59,7 @@ const Header = () => {
             />
             <span className="absolute -bottom-10 left-1/2 -translate-x-1/2 md:scale-120">
               <svg
-                viewBox="0 0 200 220"
+                viewBox="0 0 200 150"
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-[300] h-[300]"
               >
@@ -58,9 +70,20 @@ const Header = () => {
                 />
               </svg>
             </span>
-            <h1 className="text-center lg:text-2xl mt-5 font-semibold">
-              Anisa Iktibar Maharani
+          </div>
+          <div className="">
+            <h1 className="text-center lg:text-2xl mt-14 text-base">
+              Halo saya,
+              <span className="font-bold block text-xl mt-1 lg:text-2xl">
+                Anisa Iktibar Maharani
+              </span>
             </h1>
+            <h2 className="font-bold text-center text-lg mt-3 lg:text-xl">
+              Mahasiswa
+              <span className="block font-semibold text-l mt-5 lg:text-xl mb-10 leading-relaxed">
+                Hobi nangis
+              </span>
+            </h2>
           </div>
         </div>
       </div>

@@ -1,7 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import ristoBlob from "../../public/assets/ristoBlob.svg";
-import anisaBlob from "../../public/assets/anisaBlob.svg";
 const Header = () => {
   return (
     <section id="home" className="w-full">

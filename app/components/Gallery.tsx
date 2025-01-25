@@ -25,7 +25,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
                 src={item.src}
                 alt={item.alt}
                 width={300}
-                height={250}
+                height={300}
                 // layout="intrinsic"
                 className="rounded-xl"
               />

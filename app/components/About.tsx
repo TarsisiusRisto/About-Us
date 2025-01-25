@@ -12,7 +12,6 @@ const About = () => {
     >
       <div className="w-full lg:w-1/2 text-center lg:text-start px-5 lg:pl-24 items-center">
         <h1 className="text-6xl lg:text-7xl xl:text-8xl mb-5">
-          {/* <small className="text-3xl font-semibold">Test</small> */}
           <br />
           <span className={courget.className}>About Us</span>
         </h1>
@@ -21,15 +20,13 @@ const About = () => {
           itulah kami,
           <span className="bg-black px-3 py-1 text-white font-semibold rounded shadow-sm">
             lucunya
-          </span>
-          {""} 3 hari setelahnya kita dating, dan sebulan kemudian kita
+          </span>3 hari setelahnya kita dating, dan sebulan kemudian kita
           berpacaran.
           <p className="text-lg lg:text-2xl ">
-            Kita berdua cocok, meski diuji dengan perbedaan keyakinan. But it's
-            okay
+            Kita berdua cocok, meski diuji dengan perbedaan keyakinan.
           </p>
           <p>Banyak momen - momen yang kita buat selama kita bersama.</p>
-          <p className="mt-4">Semoga kita selalu bersama ya sayang❤️</p>
+          <p className="mt-4">Semoga kita selalu bersama ya sayang💕</p>
         </h2>
         <CountUpTimer launcDate="2024-04-14 00:00:00" />
         <div className="text-2xl font-semibold">

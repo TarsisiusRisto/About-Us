@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import { Libre_Baskerville, Poppins } from "next/font/google";
 import "./globals.css";
+import ThemeProvider from "./providers/theme-providers";
 
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ['400', '500', '600']
+  weight: ["400", "500", "600"],
 });
 
 const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
-  weight: ['400', '700']
+  weight: ["400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -25,9 +26,16 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${poppins.className} ${libreBaskerville.className} antialiased leading-8`}
+        className={`${poppins.className} ${libreBaskerville.className} antialiased leading-8 dark:bg-darkTheme dark:text-white`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

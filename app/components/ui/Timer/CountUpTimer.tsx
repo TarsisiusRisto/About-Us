@@ -54,7 +54,7 @@ const CountUpTimer = ({ launcDate }: { launcDate: string }) => {
   }, [launcDate]);
   return (
     <div>
-      <div className="flex justify-center lg:justify-start mt-10 gap-4">
+      <div className="flex justify-center lg:justify-start mt-5 mb-5 gap-4">
         <span className="flex flex-col justify-center items-center bg-boxTimer text-white text=3xl lg:text-5xl w-36 py-3 shadow-lg rounded">
           {timeElapsed.days}
           <small className="text-xs lg:text-sm uppercase font-semibold text-white">

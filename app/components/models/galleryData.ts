@@ -11,7 +11,6 @@ const galleryData: GalleryItem[] = [
   { src: "/assets/Gallery/u1.JPG", alt: "Photo 1", type: "image" },
   { src: "/assets/Gallery/u2.JPG", alt: "Photo 3", type: "image" },
   { src: "/assets/Gallery/u4.JPG", alt: "Photo 4", type: "image" },
-  { src: "/assets/Gallery/u5.JPG", alt: "Photo 5", type: "image" },
 ];
 
 export default galleryData;

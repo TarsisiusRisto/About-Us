@@ -1,7 +1,7 @@
 export type GalleryItem = {
   src: string;
   alt: string;
-  type: "image";
+  type: "image" | "video";
   poster?: string;
 };
 
@@ -13,11 +13,11 @@ const galleryData: GalleryItem[] = [
   { src: "/assets/Gallery/u6.jpg", alt: "Photo 6", type: "image" },
   { src: "/assets/Gallery/u7.jpg", alt: "Photo 7", type: "image" },
   { src: "/assets/Gallery/u8.jpg", alt: "Photo 8", type: "image" },
-  { src: "/assets/Gallery/u9.jpg", alt: "Photo 8", type: "image" },
-  { src: "/assets/Gallery/u10.jpg", alt: "Photo 8", type: "image" },
-  { src: "/assets/Gallery/u11.jpg", alt: "Photo 8", type: "image" },
-  { src: "/assets/Gallery/u12.jpg", alt: "Photo 8", type: "image" },
-  { src: "/assets/Gallery/u13.jpg", alt: "Photo 8", type: "image" },
+  { src: "/assets/Gallery/u9.jpg", alt: "Photo 9", type: "image" },
+  { src: "/assets/Gallery/u10.jpg", alt: "Photo 10", type: "image" },
+  { src: "/assets/Gallery/u11.jpg", alt: "Photo 11", type: "image" },
+  { src: "/assets/Gallery/u12.jpg", alt: "Photo 12", type: "image" },
+  { src: "/assets/Gallery/u13.jpg", alt: "Photo 13", type: "image" },
 ];
 
 export default galleryData;

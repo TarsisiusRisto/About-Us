@@ -6,11 +6,13 @@ import ThemeProvider from "./providers/theme-providers";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
+  // variable: "--font-poppins",
 });
 
 const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
   weight: ["400", "700"],
+  // variable: "--font-libre-baskerville",
 });
 
 export const metadata: Metadata = {

@@ -53,34 +53,39 @@ const CountUpTimer = ({ launcDate }: { launcDate: string }) => {
     return () => clearInterval(interval);
   }, [launcDate]);
   return (
-    <div>
-      <div className="flex justify-center lg:justify-start mt-5 mb-5 gap-4">
-        <span className="flex flex-col justify-center items-center bg-boxTimer text-white text=3xl lg:text-5xl w-36 py-3 shadow-lg rounded">
+
+      <div className="flex flex-wrap justify-center lg:justify-start mt-5 mb-5 gap-4">
+        <span className="flex flex-col justify-center items-center bg-boxTimer text-white text-3xl lg:text-5xl w-36 py-3 shadow-lg rounded">
+          {timeElapsed.years}
+          <small className="text-xs lg:text-sm uppercase font-semibold text-white">
+            Years
+          </small>
+        </span>
+        <span className="flex flex-col justify-center items-center bg-boxTimer text-white text-3xl lg:text-5xl w-36 py-3 shadow-lg rounded">
           {timeElapsed.days}
           <small className="text-xs lg:text-sm uppercase font-semibold text-white">
             Days
           </small>
         </span>
-        <span className="flex flex-col justify-center items-center bg-boxTimer text-white text=3xl lg:text-5xl w-36 py-3 shadow-lg rounded">
+        <span className="flex flex-col justify-center items-center bg-boxTimer text-white text-3xl lg:text-5xl w-36 py-3 shadow-lg rounded">
           {timeElapsed.hours}
           <small className="text-xs lg:text-sm uppercase font-semibold text-white">
             Hours
           </small>
         </span>
-        <span className="flex flex-col justify-center items-center bg-boxTimer text-white text=3xl lg:text-5xl w-36 py-3 shadow-lg rounded">
+        <span className="flex flex-col justify-center items-center bg-boxTimer text-white text-3xl lg:text-5xl w-36 py-3 shadow-lg rounded">
           {timeElapsed.minutes}
           <small className="text-xs lg:text-sm uppercase font-semibold text-white">
             Minute
           </small>
         </span>
-        <span className="flex flex-col justify-center items-center bg-boxTimer text-white text=3xl lg:text-5xl w-36 py-3 shadow-lg rounded">
+        <span className="flex flex-col justify-center items-center bg-boxTimer text-white text-3xl lg:text-5xl w-36 py-3 shadow-lg rounded">
           {timeElapsed.seconds}
           <small className="text-xs lg:text-sm uppercase font-semibold text-white">
             Second
           </small>
         </span>
       </div>
-    </div>
   );
 };
 

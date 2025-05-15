@@ -20,7 +20,7 @@ const Navbar = ({}) => {
     });
   });
   return (
-    <div className="fixed top-0 left-0 w-full z-50 ">
+    <div className="fixed top-0 left-0 w-full z-50">
       <nav
         className={`w-full px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between relative ${
           isScroll ? "bg-opacity-50 backdrop-blur-lg shadow-sm" : ""
@@ -83,19 +83,13 @@ const Navbar = ({}) => {
               </div>
               <div className="pt-14 h-full ">
                 <li className="mb-4">
-                  <a className="font-Roboto" href="#home">
-                    Home
-                  </a>
+                  <a href="#home">Home</a>
                 </li>
                 <li className="mb-4">
-                  <a className="font-Roboto" href="#about">
-                    About Us
-                  </a>
+                  <a href="#about">About Us</a>
                 </li>
                 <li className="mb-4">
-                  <a className="font-Roboto" href="#gallery">
-                    Gallery
-                  </a>
+                  <a href="#gallery">Gallery</a>
                 </li>
               </div>
             </ul>

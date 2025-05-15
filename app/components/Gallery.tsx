@@ -9,6 +9,7 @@ import { GalleryItem } from "./models/galleryData";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { Courgette } from "next/font/google";
+import VideoBg from "./navigation/video";
 
 type GalleryProps = {
   images: GalleryItem[];
@@ -30,13 +31,14 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
         <span className={courget.className}>Gallery</span>
       </div>
       <div className="w-full flex justify-center mb-8">
-        <video
+        {/* <video
           src="/video/videoBg.mp4"
           autoPlay
           muted
           loop
           className="w-full max-w-3xl shadow-lg rounded-xl"
-        />
+        /> */}
+        <VideoBg />
       </div>
       <div className="w-full mx-auto max-w-screen">
         <Swiper

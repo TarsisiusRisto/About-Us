@@ -31,7 +31,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
       </div>
       <div className="w-full flex justify-center mb-8">
         <video
-          src="/assets/Gallery/videoBg.mp4"
+          src="/video/videoBg.mp4"
           autoPlay
           muted
           loop

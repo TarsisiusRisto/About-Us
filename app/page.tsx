@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="overflow-y-auto scroll-smooth">
       <audio
-        src="/assets/Backsound/blue-yungkai.mp3"
+        src="/backsound/blue-yungkai.mp3"
         autoPlay
         loop
         // controls

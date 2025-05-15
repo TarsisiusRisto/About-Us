@@ -8,6 +8,13 @@ import galleryData from "./components/models/galleryData";
 export default function Home() {
   return (
     <div className="overflow-y-auto scroll-smooth">
+      <audio
+        src="/assets/Backsound/blue-yungkai.mp3"
+        autoPlay
+        loop
+        // controls
+        // className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50"
+      ></audio>
       <div>
         <Navbar />
       </div>

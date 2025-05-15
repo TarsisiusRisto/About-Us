@@ -6,13 +6,11 @@ import ThemeProvider from "./providers/theme-providers";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "500", "600"],
-  // variable: "--font-poppins",
 });
 
 const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
   weight: ["400", "700"],
-  // variable: "--font-libre-baskerville",
 });
 
 export const metadata: Metadata = {
@@ -29,6 +27,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body
         className={`${poppins.className} ${libreBaskerville.className} antialiased leading-8 dark:bg-darkTheme dark:text-white`}
+        suppressHydrationWarning
       >
         <ThemeProvider
           attribute="class"

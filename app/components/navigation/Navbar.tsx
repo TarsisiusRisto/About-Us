@@ -74,22 +74,28 @@ const Navbar = ({}) => {
             <ToggleButton isClick={isClick} toggleNavbar={toggleNavbar} />
             {/* Menu Navigation */}
             <ul
-              className={`fixed top-0 bg-darkHover text-black bottom-0 right-0 w-48 z-50 h-screen p-5 transform transition-transform duration-500 ease-in-out ${
+              className={`fixed top-0 bg-white backdrop-blur-xl text-black bottom-0 right-0 w-48 z-50 h-screen p-5 transform transition-transform duration-500 ease-in-out ${
                 isClick ? "translate-x-0" : "translate-x-full"
               }`}
             >
               <div className="absolute top-8 right-5">
                 <ToggleButton isClick={isClick} toggleNavbar={toggleNavbar} />
               </div>
-              <div className="pt-14 h-full ">
+              <div className="pt-14 h-full">
                 <li className="mb-4">
-                  <a href="#home">Home</a>
+                  <a href="#home" className="font-Poppins font-semibold">
+                    Home
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#about">About Us</a>
+                  <a href="#about" className="font-Poppins font-semibold">
+                    About Us
+                  </a>
                 </li>
                 <li className="mb-4">
-                  <a href="#gallery">Gallery</a>
+                  <a href="#gallery" className="font-Poppins font-semibold">
+                    Gallery
+                  </a>
                 </li>
               </div>
             </ul>

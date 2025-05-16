@@ -10,7 +10,7 @@ const About = () => {
       id="about"
       className="flex flex-col lg:flex-row justify-between items-start"
     >
-      <div className=" w-full lg:w-1/2 px-5 lg:mt-24 lg:mb-24">
+      <div className=" w-full lg:w-1/2 pl-24 lg:mt-24 lg:mb-24">
         <h1 className="text-6xl lg:text-7xl xl:text-8xl mb-5 text-center">
           <span className={courget.className}>About Us</span>
         </h1>

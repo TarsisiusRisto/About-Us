@@ -1,14 +1,11 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import ToggleButton from "../ui/Button/ToggleButton";
 import { ModeToggle } from "../ui/Button/ModeToggle";
+import { Courgette } from "next/font/google";
+const courget = Courgette({ weight: ["400"], subsets: ["latin"] });
 
 const Navbar = ({}) => {
   const [isScroll, setIsScroll] = useState(false);
-  const [isClick, setisClick] = useState(false);
-  const toggleNavbar = () => {
-    setisClick(!isClick);
-  };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -35,7 +32,7 @@ const Navbar = ({}) => {
             className="cursor-pointer"
           />
         </a>
-        <ul
+        {/* <ul
           className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
             isScroll ? "" : "shadow-sm"
           } `}
@@ -64,42 +61,15 @@ const Navbar = ({}) => {
               Gallery
             </a>
           </li>
-        </ul>
+        </ul> */}
+        <h1 className="text-xl lg:text-4xl font-semibold">
+          <span className={courget.className}>Enjoy ur time 💕</span>
+        </h1>
 
         {/* Icon Moon */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center">
           <ModeToggle />
           {/* ToggleButton */}
-          <div>
-            <ToggleButton isClick={isClick} toggleNavbar={toggleNavbar} />
-            {/* Menu Navigation */}
-            <ul
-              className={`fixed top-0 bg-white backdrop-blur-xl text-black bottom-0 right-0 w-48 z-50 h-screen p-5 transform transition-transform duration-500 ease-in-out ${
-                isClick ? "translate-x-0" : "translate-x-full"
-              }`}
-            >
-              <div className="absolute top-8 right-5">
-                <ToggleButton isClick={isClick} toggleNavbar={toggleNavbar} />
-              </div>
-              <div className="pt-14 h-full">
-                <li className="mb-4">
-                  <a href="#home" className="font-Poppins font-semibold">
-                    Home
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a href="#about" className="font-Poppins font-semibold">
-                    About Us
-                  </a>
-                </li>
-                <li className="mb-4">
-                  <a href="#gallery" className="font-Poppins font-semibold">
-                    Gallery
-                  </a>
-                </li>
-              </div>
-            </ul>
-          </div>
         </div>
       </nav>
     </div>

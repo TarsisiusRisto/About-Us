@@ -30,23 +30,14 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
         <span className={courget.className}>Gallery</span>
       </div>
       <div className="w-full flex justify-center mb-8">
-        {/* <video
-          src="/assets/video/videoBg.mp4"
+        <video
+          src="/assets/video/videoBg.MP4"
           autoPlay
           muted
           loop
           controls
           className="w-full max-w-3xl shadow-lg rounded-xl"
-        />   */}
-        <video
-          controls
-          preload="none"
-          muted
-          autoPlay
-          className="w-full max-w-3xl shadow-lg rounded-xl"
-        >
-          <source src="/assets/video/videoBg.mp4" type="video/mp4" />
-        </video>
+        />
       </div>
       <div className="w-full mx-auto max-w-screen">
         <Swiper

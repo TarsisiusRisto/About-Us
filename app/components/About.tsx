@@ -6,10 +6,7 @@ import CountUpTimer from "./ui/Timer/CountUpTimer";
 const courget = Courgette({ weight: ["400"], subsets: ["latin"] });
 const About = () => {
   return (
-    <section
-      id="about"
-      className="flex flex-col lg:flex-row justify-between items-start"
-    >
+    <section className="flex flex-col lg:flex-row justify-between items-start">
       <div className=" w-full lg:w-1/2 lg:pl-24 lg:mt-24 lg:mb-24">
         <h1 className="text-6xl lg:text-7xl xl:text-8xl mb-5 text-center">
           <span className={courget.className}>About Us</span>

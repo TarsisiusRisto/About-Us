@@ -1,13 +1,8 @@
-// import { Courgette } from "next/font/google";
 import Image from "next/image";
 import React from "react";
-// const courget = Courgette({ weight: ["400"], subsets: ["latin"] });
 const Header = () => {
   return (
-    <section id="home" className="">
-      {/* <h1 className="text-3xl text-center mt-16 lg:mt-24 lg:text-5xl xl:text-6xl font-semibold py-3 px-8">
-        <span className={courget.className}>Enjoy ur time 💕</span>
-      </h1> */}
+    <section className="">
       <div className="flex flex-wrap mt-20">
         <div className="w-full lg:w-1/2 self-end mt-5 lg:mt-32  mb-8">
           <Image

@@ -25,7 +25,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
     .map((img) => ({ src: img.src }));
 
   return (
-    <section id="gallery" className="w-full flex-col flex px-4 py-8">
+    <section className="w-full flex-col flex px-4 py-8">
       <div className="text-4xl lg:text-7xl font-semibold text-center mb-12">
         <span className={courget.className}>Gallery</span>
       </div>

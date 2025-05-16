@@ -23,7 +23,7 @@ const Navbar = ({}) => {
           isScroll ? "bg-opacity-50 backdrop-blur-lg shadow-sm" : ""
         }`}
       >
-        <a href="#home">
+        <a href="">
           <Image
             src="/assets/logo.png"
             alt="logo"
@@ -32,36 +32,7 @@ const Navbar = ({}) => {
             className="cursor-pointer"
           />
         </a>
-        {/* <ul
-          className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${
-            isScroll ? "" : "shadow-sm"
-          } `}
-        >
-          <li className="group">
-            <a
-              href="#home"
-              className="group-hover:text-colorText font-Poppins font-semibold"
-            >
-              Home
-            </a>
-          </li>
-          <li className="group">
-            <a
-              href="#about"
-              className="group-hover:text-colorText font-Poppins font-semibold"
-            >
-              About Us
-            </a>
-          </li>
-          <li className="group">
-            <a
-              href="#gallery"
-              className="group-hover:text-colorText font-Poppins font-semibold"
-            >
-              Gallery
-            </a>
-          </li>
-        </ul> */}
+
         <h1 className="text-xl lg:text-4xl font-semibold">
           <span className={courget.className}>Enjoy ur time 💕</span>
         </h1>
